@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tour De Maths Maths Archive</title>
+  <title>Tour De Maths Archive</title>
 
   <style>
     body {
@@ -56,7 +56,8 @@
     }
 
     .section-title {
-      margin-top: 40px;
+      margin-top: 45px;
+      margin-bottom: 10px;
       font-size: 1.8rem;
       color: #12355b;
     }
@@ -85,23 +86,53 @@
       transform: translateY(-3px);
     }
 
+    .history-button {
+      margin-top: 25px;
+    }
+
+    .history-button a {
+      display: inline-block;
+      text-decoration: none;
+      background: #1f5f99;
+      color: white;
+      padding: 16px 28px;
+      border-radius: 14px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 14px rgba(31, 95, 153, 0.2);
+    }
+
+    .history-button a:hover {
+      background: #12355b;
+      transform: translateY(-3px);
+    }
+
     footer {
       margin-top: 45px;
       font-size: 0.9rem;
       color: #6b7280;
     }
+
   </style>
 </head>
 
 <body>
+
   <div class="container">
+
     <section class="hero">
-      <img src="TourDeMaths Logo.jpg" alt="Tournament Maths Logo" class="logo" />
+
+      <img src="TourDeMaths Logo.jpg" alt="Tour De Maths Logo" class="logo" />
 
       <h1>Tour De Maths Archive</h1>
-      <p class="subtitle">Developing young mathematicians through collaboration, problem-solving and competition.</p>
+
+      <p class="subtitle">
+        Developing young mathematicians through collaboration, problem-solving and competition.
+      </p>
 
       <div class="description">
+
         <p>
           Tour De Maths is a Johannesburg-based mathematics competition that has been running since 2005,
           with the aim of developing mathematical thinking in Grade 8, 9 and 10 learners.
@@ -115,9 +146,11 @@
 
         <p>
           At the end of each event, a prize-giving is held on the night. Across the seven legs of the year,
-          results are recorded to recognise the top schools and the leading individual participants.
+          results are recorded to recognise the top schools and leading participants.
         </p>
+
       </div>
+
     </section>
 
     <h2 class="section-title">Browse Past Papers and Memoranda</h2>
@@ -138,9 +171,17 @@
       <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2026">2026</a>
     </div>
 
+    <h2 class="section-title">Tournament History</h2>
+
+    <div class="history-button">
+      <a href="winners.html">View Tournament Champions Since 2005</a>
+    </div>
+
     <footer>
       <p>&copy; 2026 Tour De Maths. Archive made available for the mathematics education community.</p>
     </footer>
+
   </div>
+
 </body>
 </html>
