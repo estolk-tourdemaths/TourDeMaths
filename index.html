@@ -1,27 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Tour de Maths Archive</title>
-</head>
-<body>
-  <h1>Tour de Maths Archive</h1>
-  <p>Past Tour de Maths papers and memoranda.</p>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tournament Maths Archive</title>
 
-  <h2>Browse by Year</h2>
-  <ul>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2014">2014 Papers</a></li>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2015">2015 Papers</a></li>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2016">2016 Papers</a></li>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2017">2017 Papers</a></li>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2018">2018 Papers</a></li>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2019">2019 Papers</a></li>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2020">2020 Papers</a></li>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2021">2021 Papers</a></li>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2022">2022 Papers</a></li>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2023">2023 Papers</a></li>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2024">2024 Papers</a></li>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2025">2025 Papers</a></li>
-    <li><a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2026">2026 Papers</a></li>
-  </ul>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #eef4f8, #ffffff);
+      color: #1f2933;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      margin-bottom: 35px;
+    }
+
+    .logo {
+      max-width: 260px;
+      width: 80%;
+      height: auto;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin: 10px 0;
+      color: #12355b;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #4b5563;
+      margin-bottom: 25px;
+    }
+
+    .description {
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #374151;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      font-size: 1.8rem;
+      color: #12355b;
+    }
+
+    .year-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 16px;
+      margin-top: 25px;
+    }
+
+    .year-grid a {
+      text-decoration: none;
+      background: #12355b;
+      color: white;
+      padding: 18px 10px;
+      border-radius: 14px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 14px rgba(18, 53, 91, 0.18);
+    }
+
+    .year-grid a:hover {
+      background: #1f5f99;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      margin-top: 45px;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section class="hero">
+      <img src="TourDeMaths Logo.jpg" alt="Tournament Maths Logo" class="logo" />
+
+      <h1>Tournament Maths Archive</h1>
+      <p class="subtitle">Developing young mathematicians through collaboration, problem-solving and competition.</p>
+
+      <div class="description">
+        <p>
+          Tournament Maths is a Johannesburg mathematics competition that has been running for a number of years,
+          with the aim of developing mathematical thinking in Grade 8, 9 and 10 learners.
+        </p>
+
+        <p>
+          Schools send 16 learners to each event. Pairs of learners from one school are partnered with a pair
+          from another school, forming teams of four who work together on an hour-long mathematics paper.
+          The questions draw on curriculum knowledge, creative problem-solving and collaborative thinking.
+        </p>
+
+        <p>
+          At the end of each event, a prize-giving is held on the night. Across the seven legs of the year,
+          results are recorded to recognise the top schools and the leading individual participants.
+        </p>
+      </div>
+    </section>
+
+    <h2 class="section-title">Browse Past Papers and Memoranda</h2>
+
+    <div class="year-grid">
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2014">2014</a>
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2015">2015</a>
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2016">2016</a>
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2017">2017</a>
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2018">2018</a>
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2019">2019</a>
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2020">2020</a>
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2021">2021</a>
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2022">2022</a>
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2023">2023</a>
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2024">2024</a>
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2025">2025</a>
+      <a href="https://github.com/estolk-tourdemaths/TourDeMaths/tree/2026">2026</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Tournament Maths. Archive made available for the mathematics education community.</p>
+    </footer>
+  </div>
 </body>
 </html>
